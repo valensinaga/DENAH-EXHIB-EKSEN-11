@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Denah Exhibition EKSEN 11</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="demo">MODE DEMO — data hanya tersimpan di browser ini. Isi kunci Supabase di index.html untuk mode asli.</div>
+<header><div class="top"><h1>Denah Exhibition EKSEN 11<small>Mistis Tradisional Banyuwangi · 14 November 2026</small></h1><button id="adminbar" class="pri">＋ Tambah titik</button><button id="auth">Login admin</button></div>
+<div class="stats"><div class="st"><span>Total biaya semua titik</span><b id="tot">Rp 0</b></div><div class="st"><span>Biaya terealisasi</span><b id="real">Rp 0</b></div><div class="st"><span>Progres (<span id="dn">0</span>/<span id="al">0</span> kebutuhan)</span><b id="pct">0%</b><div class="bar"><i id="pb"></i></div></div><div class="st"><span>Jumlah titik</span><b id="cnt">0</b></div></div></header>
+<div class="wrap"><div><div class="tools"><button id="zo">－</button><button id="zi">＋</button><span class="mu" style="align-self:center;font-size:13px">Zoom · ketuk nomor untuk detail</span></div>
+<div id="mapbox"><div id="inner"><img src="denah.jpg" alt="Denah"><div id="pins"></div></div></div></div>
+<div><div class="tools tabs"><button id="tl" class="on">Daftar titik</button><button id="tr">Rekap kebutuhan</button></div>
+<div id="fl" class="tools"><input id="q" placeholder="Cari…"><select id="cat"></select></div><div id="list"></div><div id="rk" class="tw" style="display:none"></div></div></div>
+<div id="ov"><div id="md"></div></div><div id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script></body></html>
